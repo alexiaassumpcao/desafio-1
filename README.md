@@ -28,5 +28,16 @@ Rotas:
 - `GET` http://localhost:3000/v1/products [TODO]
 retorna listagem de produtos que são vendidos no petShop.
 
-- `GET` http://localhost:3000/v1/services [TODO]
+- `GET` http://localhost:3000/v1/services => 
 retorna lista de serviços que o petshop oferece.
+
+- `POST` http://localhost:3000/v1/services => 
+cria novo serviço.
+`Body request`
+``` 
+    {
+        "name": string,
+        "type": string, // BIG, MEDIUM, SHORT
+        "price": string
+    }
+```

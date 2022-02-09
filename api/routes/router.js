@@ -1,5 +1,5 @@
 const express = require('express');
-const listServicesController = require("../controllers/services")
+const { getServices, createNewService } = require("../controllers/services")
 const app = express();
 
 app.get("/", (req, res) => {
@@ -12,8 +12,17 @@ app.get("/products", (req, res) => {
 })
 
 app.get("/services", (req, res) => {
-    const services = listServicesController()
+    const services = getServices()
     res.status(200).json(services)
+})
+
+app.post("/services", (req, res) => {
+    const { body } = req
+    const error = createNewService(body)
+    if(error !== ""){
+        res.status(400).send(error)
+    }
+    res.status(201).send()
 })
 
 

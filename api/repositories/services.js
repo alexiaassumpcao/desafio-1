@@ -1,7 +1,12 @@
-const services = require("./mock/services")
+let services = require("./mock/services")
 
-function listServices () {
+function getAllServices () {
     return services
 }
 
-module.exports = listServices
+function createService(service) {
+    service.id = services.length()
+    services = services.concat(service)
+}
+
+module.exports = { getAllServices, createService }
