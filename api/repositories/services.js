@@ -5,7 +5,7 @@ function getAllServices () {
 }
 
 function createService(service) {
-    service.id = services.length()
+    service.id = services.length + 1
     services = services.concat(service)
 }
 

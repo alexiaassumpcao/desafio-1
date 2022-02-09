@@ -41,3 +41,37 @@ cria novo serviço.
         "price": string
     }
 ```
+
+
+## Endpoints
+
+- `GET` localhost:3000/health 
+    - Respostas: `200`
+    ```
+    OK
+    ```
+- `GET` localhost:3000/ping 
+    - Respostas: `200`
+    ```
+    pong
+    ```
+- `GET` localhost:3000/v1/services
+    - Respostas: `200`
+    ```
+    []{
+            "id": int,
+            "name": string,
+            "type": string, // BIG || MEDIUM || SHORT
+            "price": string,
+        }
+    ```
+- `POST` localhost:3000/v1/services
+    - Request Body
+    ```
+    {
+        "name": string,
+        "type": string, // BIG || MEDIUM || SHORT
+        "price": string
+    }
+    ```
+    - Respostas: `201`, `400`

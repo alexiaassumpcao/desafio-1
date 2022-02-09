@@ -1,4 +1,5 @@
 const { listServices, newService } = require("../use-cases/services")
+const { ERRORS } = require("../constants/errors")
 
 function getServices() {
     const services = listServices()
@@ -7,7 +8,7 @@ function getServices() {
 
 function createNewService(service) {
     const error = newService(service)
-    return error
+    return ERRORS[error]
 }
 
 

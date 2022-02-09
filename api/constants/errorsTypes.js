@@ -1,0 +1,4 @@
+const ERROR_TYPE_ID = "ID_ON_SERVICE"
+const ERROR_TYPE_TYPE = "WRONG_TYPE"
+
+module.exports = { ERROR_TYPE_ID, ERROR_TYPE_TYPE }
