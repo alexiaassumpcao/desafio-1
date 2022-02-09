@@ -1,4 +1,5 @@
 const express = require('express');
+const listServicesController = require("../controllers/services")
 const app = express();
 
 app.get("/", (req, res) => {
@@ -11,7 +12,8 @@ app.get("/products", (req, res) => {
 })
 
 app.get("/services", (req, res) => {
-    res.send("Serviços").status(200)
+    const services = listServicesController()
+    res.status(200).json(services)
 })
 
 

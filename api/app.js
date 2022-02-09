@@ -3,9 +3,6 @@ const routes = require('./routes/router');
 const app = express()
 
 
-
-
-
 app.listen(3000, () => {
     console.log(`Look at http://localhost:3000`)
 })
