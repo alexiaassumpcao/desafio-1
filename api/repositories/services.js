@@ -1,4 +1,4 @@
-const services = require("../mock/services")
+const services = require("./mock/services")
 
 function listServices () {
     return services

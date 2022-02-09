@@ -1,4 +1,4 @@
-const listServices = require("../repositories/services/index")
+const listServices = require("../use-cases/services")
 
 function getServices() {
     const services = listServices()
