@@ -5,19 +5,28 @@
 - Express
 
 ## Instalar dependencias
+1 - Entre na pasta `api`:
+```
+cd api
+```
 
+2 - Instale as dependencias:
 ```
 npm install
 ```
 
 ## Rodar localmente
-
+- Caso `não` esteja dentro da pasta `api`:
 ```
 node api/app.js
 ```
 
-OBS: necessário que a porta `3000` não esteja em utilização.
+- Caso esteja dentro da pasta `api`:
+```
+node app.js
+```
 
+OBS: necessário que a porta `3000` não esteja em utilização.
 
 
 ## Ideias
