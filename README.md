@@ -1,16 +1,15 @@
 # desafio-1
 
-## Dependencias
+## Dependências
 - NodeJs
-- Express
 
-## Instalar dependencias
+## Instalar dependências
 1 - Entre na pasta `api`:
 ```
 cd api
 ```
 
-2 - Instale as dependencias:
+2 - Instale as dependências:
 ```
 npm install
 ```
@@ -34,7 +33,7 @@ API em node com express com conteudo mockado
 ### v1
 Tema PetShop, produtos e serviços oferecidos por um petshop.
 Rotas:
-- `GET` http://localhost:3000/v1/products [TODO]
+- `GET` http://localhost:3000/v1/products [TODO] => 
 retorna listagem de produtos que são vendidos no petShop.
 
 - `GET` http://localhost:3000/v1/services => 
@@ -84,3 +83,8 @@ cria novo serviço.
     }
     ```
     - Respostas: `201`, `400`
+
+
+### Referências
+- [NodeJS](https://nodejs.org/en/)
+- [Express](https://expressjs.com/pt-br/)
